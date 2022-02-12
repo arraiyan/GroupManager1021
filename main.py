@@ -12,7 +12,12 @@ logger = logging.getLogger(__name__)
 
 
 def start(update: Update, context: CallbackContext) -> None:
-    return
+    if update.message.chat.type=='private':
+        update.message.reply_text('I am wakened')
+        return
+    else:
+        return
+    
 
 
 def help_command(update: Update, context: CallbackContext) -> None:
