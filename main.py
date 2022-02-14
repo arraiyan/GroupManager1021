@@ -46,7 +46,7 @@ def new_join(update: Update, context: CallbackContext) -> None:
     context.bot.send_message(
         chat_id=update.message.chat_id, text=txt, parse_mode='HTML')
     context.bot.send_message(
-        chat_id=update.message.chat_id, text='', parse_mode='HTML')
+        chat_id=update.message.chat_id, text=txt0, parse_mode='HTML')
     print(name)
     return
 
