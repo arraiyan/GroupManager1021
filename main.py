@@ -42,8 +42,11 @@ def new_join(update: Update, context: CallbackContext) -> None:
     name = user.username
     fname = str(user.first_name)+str(' ')+str(user.last_name)
     txt = f'@{name}\n\nHi {fname} \n' + env.WelComeText
+    txt0 = f'@{name}\n\nHi {fname} \n' + 'Hey Check it out we\'ve got a airdrop running 🔥🔥🔥 \n\n Collect the airdrop now and refer to friends to earn a lot of free tokens . 🔥🔥🔥 \n\n👉👉 @Big_Bit_Bull_BTB_Airdrop_Bot'                                                                             
     context.bot.send_message(
         chat_id=update.message.chat_id, text=txt, parse_mode='HTML')
+    context.bot.send_message(
+        chat_id=update.message.chat_id, text='', parse_mode='HTML')
     print(name)
     return
 
